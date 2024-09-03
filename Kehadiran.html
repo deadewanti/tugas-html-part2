@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hadir</title>
+</head>
+
+<body>
+    <h3>Daftar Hadir</h3>
+    <form action="submit_attendance.php" method="post">
+        <label for="name">Nama :</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Keterangan :</label>
+        <input type="radio" id="hadir" name="keterangan" value="hadir">
+        <label for="hadir">Hadir</label>
+        <input type="radio" id="tidak_hadir" name="keterangan" value="tidak_hadir">
+        <label for="tidak_hadir">Tidak Hadir</label><br><br>
+
+        <input type="submit" value="tambah">
+    </form>
+    <br>
+            <table border="1" cellpadding="5" cellspacing="0"
+            width="25%" heigth="50px">
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th colspan="2">Keterangan</th>
+            </tr>
+            <tr>
+                <th>Hadir</th>
+                <th>Tidak Hadir</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dhea</td>
+                <td>100%</td>
+                <td>0%</td>
+            </tr>
+    </table>
+</body>
+
+</html>
